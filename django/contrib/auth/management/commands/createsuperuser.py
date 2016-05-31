@@ -86,8 +86,8 @@ class Command(BaseCommand):
             default_username = get_default_username()
             try:
 
-                if hasattr(self.stdin, 'isatty') and not self.stdin.isatty():
-                    raise NotRunningInTTYException("Not running in a TTY")
+                #if hasattr(self.stdin, 'isatty') and not self.stdin.isatty():
+                #    raise NotRunningInTTYException("Not running in a TTY")
 
                 # Get a username
                 verbose_field_name = self.username_field.verbose_name
